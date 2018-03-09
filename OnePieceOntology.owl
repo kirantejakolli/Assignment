@@ -1,0 +1,1772 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/kiran/ontologies/2018/2/untitled-ontology-12#"
+     xml:base="http://www.semanticweb.org/kiran/ontologies/2018/2/untitled-ontology-12"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/kiran/ontologies/2018/2/untitled-ontology-12">
+        <rdfs:comment>OnePiece Ontology is a structure that describes the whole character profiles acted in the series.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000082 -->
+
+    <owl:ObjectProperty rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000082">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:isDefinedBy>The voice over given to the characters.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">voiceGivenBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000084 -->
+
+    <owl:ObjectProperty rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000084">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:isDefinedBy>The devil fruit has to be consumed to get special powers</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">isConsumedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000093 -->
+
+    <owl:ObjectProperty rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000093">
+        <rdfs:isDefinedBy>Episodes that are directed by a particular director.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">directedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000113 -->
+
+    <owl:ObjectProperty rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000113">
+        <rdfs:isDefinedBy>The character in the series belong to a particular age in the series.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">isInAgeGroupOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000114 -->
+
+    <owl:ObjectProperty rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000114">
+        <rdfs:isDefinedBy>The person has given voice to the particular character.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">hasGivenVoiceTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000153 -->
+
+    <owl:ObjectProperty rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000153">
+        <rdfs:isDefinedBy>The episodes are written by the following writter.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">writtenBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000001 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000001">
+        <rdfs:isDefinedBy xml:lang="en">Onepiece Ontology describes about the main characters involved in the series and cast details.It also states the owners of devil fruits which are the part of series.The relations are stated within the classes.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">OnePiece</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000003 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000003">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000001"/>
+        <rdfs:isDefinedBy>Devil Fruits are mystical fruits found throughout the world that, when consumed, provide the eater a special ability, depending on the type and variation of the Fruit itself. With only one notable exception, an individual can only acquire the powers of a single Devil Fruit.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Devil Fruit Users</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000009 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000009">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000047"/>
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000065"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000082"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000061"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Tony Tony Chopper, also known as &quot;Cotton Candy Lover&quot; Chopper, is the doctor of the Straw Hat Pirates.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Tony Tony Chopper</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000014 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000014">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000003"/>
+        <owl:disjointWith rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000021"/>
+        <rdfs:isDefinedBy>Powers which are most powerfull and dangerous.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Awakened Devil Fruit Users</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000015 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000015">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000014"/>
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000035"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000084"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Mochi-Mochi Fruit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000016 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000016">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000015"/>
+        <rdfs:label xml:lang="en">Charlotte Katakuri</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000017 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000017">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000014"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000084"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">String-String Fruit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000018 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000018">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000017"/>
+        <rdfs:label xml:lang="en">Donquixote Doflamingo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000019 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000019">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000014"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000084"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Gol-Gol Fruit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000020 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000020">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000019"/>
+        <rdfs:label xml:lang="en">Gild Tesoro</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000021 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000021">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000003"/>
+        <rdfs:isDefinedBy>Special powers that include smoke, fire, light and gas.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Logia Devil Fruit Users‎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000022 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000022">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000021"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000084"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Dark-DarkFruit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000023 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000023">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000022"/>
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000024"/>
+        <rdfs:label xml:lang="en">Marshall D. Teach</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000024 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000024">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000021"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000084"/>
+                <owl:someValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Tremor-TremorFruit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000025 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000025">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000021"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000084"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Flame-FlameFruit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000026 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000026">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000025"/>
+        <rdfs:label xml:lang="en">Portgas D. Ace</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000027 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000027">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000021"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000084"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000028"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Flare-FlareFruit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000028 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000028">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000027"/>
+        <rdfs:label xml:lang="en">Sabo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000029 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000029">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000021"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000084"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Magma-MagmaFruit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000030 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000030">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000029"/>
+        <rdfs:label xml:lang="en">Sakazuki</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000031 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000031">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000021"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000084"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000032"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Gas-GasFruit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000032 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000032">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000031"/>
+        <rdfs:label xml:lang="en">Ceaser Clown</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000033 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000033">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000021"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000084"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Glint-GlintFruit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000034 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000034">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000033"/>
+        <rdfs:label xml:lang="en">Borsalino</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000035 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000035">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000003"/>
+        <rdfs:isDefinedBy>These fruits give the users a power that can affect their body, manipulate the environment, or produce substances.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Paramecia Devil Fruit Users‎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000036 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000036">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000035"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000084"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000037"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Gum-Gum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000037 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000037">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000036"/>
+        <rdfs:label xml:lang="en">Monkey D.Luffy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000038 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000038">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000035"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000084"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000039"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Heat-Heat Fruit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000039 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000039">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000038"/>
+        <rdfs:label xml:lang="en">Charlotte Oven</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000040 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000040">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000035"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000084"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Lick-Lick Fruit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000041 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000041">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000040"/>
+        <rdfs:label xml:lang="en">Charlotte Perospero</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000042 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000042">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000035"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000084"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000043"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Puff-Puff Fruit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000043 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000043">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000042"/>
+        <rdfs:label xml:lang="en">Charlotte Daifuku</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000044 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000044">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000003"/>
+        <rdfs:isDefinedBy>Powers thate deal with medical treatments.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Zoan Devil Fruit Users</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000045 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000045">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000044"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000084"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000046"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Human-Human Fruit Daibutsu</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000046 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000046">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000045"/>
+        <rdfs:isDefinedBy xml:lang="en">Sengoku the Buddha was the fleet admiral of the Marines pre-timeskip, succeeding Kong and preceding Sakazuki. He was also one of the major figures along with Whitebeard, Shiki, and Monkey D. Garp during the times when Gol D. Roger was still alive, and still continues to be in the present, even after his retirement from the Marines.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Sengoku</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000047 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000047">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000044"/>
+        <rdfs:label xml:lang="en">Human-Human Fruit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000048 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000048">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000044"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000084"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000049"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Turtle-Turtle Fruit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000049 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000049">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000048"/>
+        <rdfs:isDefinedBy xml:lang="en">Pekoms is a combatant of the Big Mom Pirates and a lion mink. He is partnered with Tamago, and both are responsible for collecting the monthly payment of sweets from Fishman Island in exchange for Big Mom&apos;s protection.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Pekoms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000050 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000050">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000044"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000084"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000051"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Man-Made Devil Fruit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000051 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000051">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000050"/>
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000099"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000113"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000103"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">Kozuki Momonosuke is an inhabitant of Wano Country and the son of the late daimyo of Kuri and patriarch of the Kozuki Family, Kozuki Oden.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Kozuki Momonosuke</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000061 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000061">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000009"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000114"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">Brina Michelle Palencia is an American actress and singer who voices a number of English-language dubs of Japanese anime shows.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">BRINA PALENCIA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000065 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000065">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000100"/>
+        <rdfs:isDefinedBy xml:lang="en">This class represents the main leading characters in the show.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Main Characters</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000066 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000066">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000065"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000082"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Monkey D. Luffy,also known as &quot;Straw Hat Luffy&quot; and commonly as &quot;Straw Hat&quot;, is the main protagonist of the manga and anime, One Piece.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Monkey D. Luffy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000067 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000067">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000066"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000114"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">Colleen Smith Clinkenbeard is an American voice actress, line producer, ADR director and script writer at Funimation who provides the voices for English versions of Japanese anime series.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Colleen Clinkenbeard</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000068 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000068">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000065"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000082"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000069"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Roronoa Zoro, also known as &quot;Pirate Hunter&quot; Zoro,is a pirate and a former bounty hunter.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Roronoa Zoro / Zolo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000069 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000069">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000068"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000114"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000068"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">Christopher Robin Sabat is an American voice actor, producer, ADR director, and line producer at Funimation.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Christopher Sabat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000070 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000070">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000065"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000082"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000071"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>&quot;Cat Burglar&quot; Nami is a pirate and the navigator of the Straw Hat Pirates. She was the third member of the crew and the second to join, doing so during the Orange Town Arc.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Nami</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000071 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000071">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000070"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000114"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000070"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">Louisa Michelle &quot;Luci&quot; Christian is an American voice actress and ADR script writer at Funimation and Seraphim Digital/Sentai Filmworks. She has provided many voices for English versions of Japanese anime series and films.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Luci Christian</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000072 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000072">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000065"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000082"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000073"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>&quot;God&quot; Usopp is a pirate and is the sniper of the Straw Hat Pirates, and the former captain of the Usopp Pirates.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Usopp</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000073 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000073">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000114"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000072"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">Don &quot;Sonny&quot; Strait is an American voice actor, ADR director, and script writer at Funimation who provided voices for a number of English versions of Japanese anime series. He is also a comic book artist.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Sonny Strait</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000074 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000074">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000065"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000082"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000075"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Vinsmoke Sanji, most commonly known by his moniker &quot;Black Leg&quot; Sanji,is a pirate and the cook of the Straw Hat Pirates, as well as the former sous chef of the Baratie.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Sanji</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000075 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000075">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000074"/>
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000087"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000114"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000074"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">Eric Vale is an American voice actor, ADR director, script writer, and head writer at Funimation, who provided voices for a number of English versions of Japanese anime series.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Eric Vale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000076 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000076">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000065"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000082"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000077"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Nico Robin, also known by her epithet &quot;Devil Child&quot; and the &quot;Light of the Revolution&quot;, is the archaeologist of the Straw Hat Pirates</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Nico Robin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000077 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000077">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000076"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000114"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000076"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">Stephanie Young Brehm is an American actress primarily known for her voice-over work in English-language dubs for Japanese anime.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Stephanie Young</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000078 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000078">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000065"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000082"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000079"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>&quot;Iron Man&quot; Franky is the shipwright for the Straw Hat Pirates.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Franky</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000079 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000079">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000078"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000114"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000078"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">Patrick Seitz is an American voice actor, ADR director and script writer known for his work for Bang Zoom! Entertainment, Viz Media, Funimation.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Patrick Seitz</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000080 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000080">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000065"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000082"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000081"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>&quot;Soul King&quot; Brook is the musician of the Straw Hat Pirates.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Brook</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000081 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000081">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000080"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000114"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000080"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">Ian Sinclair is an American voice actor and voice director who works with Funimation and Sentai Filmworks. He provides voices for a number of English versions of Japanese anime series.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Ian Sinclair</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000085 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000085">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000001"/>
+        <rdfs:isDefinedBy xml:lang="en">The cast and crew worked for the series.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Cast and Crew</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000086 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000086">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000085"/>
+        <rdfs:label xml:lang="en">Director</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000087 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000087">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000085"/>
+        <rdfs:isDefinedBy xml:lang="en">This class is about the writters who wrote episodes in the series.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Series writing credits</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000088 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000088">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000086"/>
+        <rdfs:label xml:lang="en">Munehisa Sakai</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000089 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000089">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000086"/>
+        <rdfs:label xml:lang="en">Kônosuke Uda</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000090 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000090">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000086"/>
+        <rdfs:label xml:lang="en">Hiroaki Miyamoto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000091 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000091">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000086"/>
+        <rdfs:label xml:lang="en">Junji Shimizu</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000092 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000092">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000086"/>
+        <rdfs:label xml:lang="en">Mamoru Hosoda</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000094 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000094">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000089"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000093"/>
+                <owl:someValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000089"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">130 episodes, 2005-2008</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000095 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000095">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000088"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000093"/>
+                <owl:someValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000088"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">113 episodes, 1999-2002</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000096 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000096">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000090"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000093"/>
+                <owl:someValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000090"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">2 episodes, 2008-2013</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000097 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000097">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000092"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000093"/>
+                <owl:someValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000092"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">1 episode, 2002</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000098 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000098">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000091"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000093"/>
+                <owl:someValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000091"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">1 episode, 2004</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000099 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000099">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000100"/>
+        <rdfs:isDefinedBy xml:lang="en">Children characters that are involved in the series.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Children</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000100 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000100">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000001"/>
+        <rdfs:isDefinedBy xml:lang="en">It states the characters that are involved in the series.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Characters</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000101 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000101">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000099"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000113"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000102"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">Pez is a small, chubby baby with long pink hair. Despite being a baby, he has 5 o&apos;clock stubble much like his father and has a cigar-shaped pacifier in his mouth.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Capone Pez</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000102 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000102">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000101"/>
+        <rdfs:isDefinedBy xml:lang="en">Age is less than 2 years.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Less than 2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000103 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000103">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000051"/>
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000104"/>
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000110"/>
+        <rdfs:isDefinedBy xml:lang="en">Age is 8.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">8</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000104 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000104">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000099"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000113"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000103"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">Kuina was the late childhood friend of Zoro. She was the daughter of Koshiro and was the reason why Zoro developed the Santoryu technique.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Kuina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000105 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000105">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000099"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000113"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000106"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">Anana is a young girl with pink wavy hair and large red eyes. She wears a short pink dress with a white collar and frills on the bottom, as well as black leggings and yellow shoes.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Anana</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000106 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000106">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000105"/>
+        <rdfs:isDefinedBy xml:lang="en">Age is 6 years.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000107 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000107">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000099"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000113"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000108"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">iss Goldenweek is a small child, with relatively large eyes and circles of blush on her cheeks. She is fairly short in stature and wears her dark red hair tied in braided pigtails.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Ms. Golden Week</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000108 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000108">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000107"/>
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000109"/>
+        <rdfs:isDefinedBy xml:lang="en">Age is 5 years.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000109 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000109">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000099"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000113"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000108"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">Aisa is a small Shandia girl. She wears a fur dress and cap. In the manga, her dress and cap are yellow and the in lines are white.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Aisa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000110 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000110">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000099"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000113"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000103"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">Dolce and Dragée are young identical-looking boys who have a round body shape and wear formal pink shirts with striped pants. They are usually seen hanging on to balloons.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Dolce, Dragée</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000111 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000111">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000099"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000113"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000112"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">Apis wears a long mustard yellow dress. The sleeves and the bottom of the dress are maroon with mustard colored circles. She has a dark maroon sash, and has the same colored undershirt.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Apisu</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000112 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000112">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000111"/>
+        <rdfs:isDefinedBy xml:lang="en">Age is 7 years.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">7</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000115 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000115">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000087"/>
+        <rdfs:isDefinedBy xml:lang="en">Eiichiro Oda is a Japanese manga artist, screenwriter and film producer who is best known for his manga series One Piece (1997–present). With 430 million copies in circulation worldwide, One Piece is the best-selling manga series of all time.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Eiichiro Oda</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000116 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000116">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000115"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000153"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000115"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">(565 episodes, 1999-2012)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000117 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000117">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000087"/>
+        <rdfs:isDefinedBy xml:lang="en">Bonny Clinkenbeard isn’t an actual voice actor but a script writer for FUNimation Entertainment.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Bonny Clinkenbeard</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000118 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000118">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000117"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000153"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000117"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The 43 episodes inrange of 2001-2003 were written.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">(43 episodes, 2001-2003)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000119 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000119">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000087"/>
+        <rdfs:isDefinedBy xml:lang="en">He was born in 1956, Hyōgo Prefecture, Japan.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Yoshiyuki Suga</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000120 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000120">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000119"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000153"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000119"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">(41 episodes, 2002-2010)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000121 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000121">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000087"/>
+        <rdfs:isDefinedBy xml:lang="en">Sean Whitley, Writer: Yip Man chin chyun. Sean Whitley is a writer and producer, known for The Legend Is Born: Ip Man (2010), Kiseijuu (2014) and Shin Godzilla (2016).</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Sean Whitley</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000122 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000122">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000121"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000153"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">(32 episodes, 2001-2010)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000123 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000123">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000075"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000153"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000075"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">(28 episodes, 1999-2004)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000124 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000124">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000087"/>
+        <rdfs:isDefinedBy xml:lang="en">Jun Tanaka (born 18 November 1971) is an American-born Japanese-British UK TV chef, best known for presenting Channel 4&apos;s Cooking It as well as appearing in Saturday Kitchen on BBC One. He was the third Grand Champion of the American competitive cooking show, Chopped.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Jin Tanaka</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000125 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000125">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000124"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000153"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000124"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">(19 episodes, 2009-2010)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000126 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000126">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000087"/>
+        <rdfs:isDefinedBy xml:lang="en">John Burgmeier (born October 24, 1974) is an American voice actor, writer and musician who works for Funimation for English dubbed anime. As a voice actor, he is best known as the voice of Kurama from Yu Yu Hakusho.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">John Burgmeier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000127 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000127">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000126"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000153"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000126"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">(15 episodes, 2003-2004)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000128 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000128">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000087"/>
+        <rdfs:isDefinedBy xml:lang="en">Junki Takegami  (born February 26, 1955 in Kagoshima, Japan) is a writer of the Pokémon anime. He has written many episodes, the first being Showdown in Pewter City.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Junki Takegami</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000129 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000129">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000128"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000153"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000128"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The 14 episodes of One piece in 1999-2003.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">(14 episodes, 1999-2003)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000130 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000130">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000087"/>
+        <rdfs:isDefinedBy xml:lang="en">films written by Hirohiko Uesaka. Visibility Filters. Show all; Fade watched films; Filters. Show watched films; Hide watched films; Hide short films; Hide unreleased films.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Hirohiko Uesaka</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000131 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000131">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000130"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000153"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000130"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">(14 episodes, 2009-2010)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000132 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000132">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000087"/>
+        <rdfs:isDefinedBy xml:lang="en">Michiru Shimada was a Japanese anime screenwriter from Tokyo. Shimada was a graduate of Waseda University. She made her screenwriting debut in 1980. She died in 2017, aged 58, from undisclosed causes.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Michiru Shimada</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000133 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000133">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000132"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000153"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000132"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">(13 episodes, 1999-2003)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000134 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000134">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000087"/>
+        <rdfs:isDefinedBy xml:lang="en">Spencer Prokop, Actor: RoboCop. Spencer Prokop was born on August 1, 1957 in Milwaukee, Wisconsin, USA. He was a writer and actor, known for RoboCop (1987), Deus Ex (2000) and The Operator (2000).</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Spencer Prokop</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000135 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000135">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000134"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000153"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000134"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">(10 episodes, 2001-2003)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000136 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000136">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000087"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000153"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000136"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">Matt Chaney is a writer, editor, publisher and teacher living in Missouri. A former college football player, Chaney specializes in issues of sport, producing reports and commentary for publications such as The New York Daily News and The Kansas City Star.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Matt Chaney</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000137 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000137">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000136"/>
+        <rdfs:label xml:lang="en">(7 episodes, 1999-2003)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000138 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000138">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000087"/>
+        <rdfs:isDefinedBy xml:lang="en">harles Brandon Potter (born July 28, 1982) is an American voice actor, voice director, and script writer who works for anime series at Funimation/OkraTron 5000.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Brandon Potter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000139 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000139">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000138"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000153"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000138"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">(7 episodes, 2000-2003)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000140 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000140">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000087"/>
+        <rdfs:isDefinedBy xml:lang="en">Ryōta Yamaguchi is a Japanese anime screenwriter often associated with Sunrise. He penned a number of scripts for Sunrise&apos;s anime TV series The Vision of Escaflowne, as well as writing the movie version, Escaflowne: A Girl in Gaea with director Kazuki Akane.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Ryôta Yamaguchi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000141 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000141">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000140"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000153"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000140"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">(6 episodes, 2003)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000142 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000142">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000087"/>
+        <rdfs:isDefinedBy xml:lang="en">Katelyn Barr is an actress and writer, known for Cross Ange: Tenshi to Ryuu no Rondo (2014), Chuunibyou demo koi ga shitai!</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Katelyn Barr</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000143 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000143">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000142"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000153"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000142"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">(4 episodes, 2011)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000144 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000144">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000087"/>
+        <rdfs:isDefinedBy xml:lang="en">Kelli Howard, Writer: One Piece: Wan pîsu. Kelli Howard is a writer and actor, known for One Piece: Wan pîsu (1999), Moon Phase (2004) and Genesis of Aquarion (2005).</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Kelli Howard</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000145 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000145">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000144"/>
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000146"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000153"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000144"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000153"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000146"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">(2 episodes, 2003)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000146 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000146">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000087"/>
+        <rdfs:isDefinedBy xml:lang="en">Andrew Rye, Writer: Dragon Ball Z. Andrew Rye was born on August 1, 1978 in Wimbledon, London, England. He is known for his work on Dragon Ball Z (1996), Higashi no Eden (2009) and Dragon Ball GT: Doragon bôru jîtî (1996).</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Andrew Rye</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000147 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000147">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000087"/>
+        <rdfs:isDefinedBy xml:lang="en">Sean Michael Teague is an American voice actor and ADR script writer for Funimation and OkraTron 5000. He has provided voices for a number of English-language versions of Japanese anime films and television series.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Sean Teague</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000148 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000148">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000147"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000153"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000147"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">(1 episode, 2002)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000149 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000149">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000087"/>
+        <rdfs:isDefinedBy xml:lang="en">Michael Charles &quot;Mike&quot; McFarland is an American voice actor and ADR director who works on English dubs of Japanese anime at Funimation, originating the voice of Master Roshi and Yajirobe in their dubs of Dragon Ball and Dragon Ball Z.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Mike McFarland</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000150 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000150">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000149"/>
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000153"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000149"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000153"/>
+                <owl:allValuesFrom rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000152"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">(1 episode, 2003</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http//www.pizza.owl/OnePiece/OnePiece0000152 -->
+
+    <owl:Class rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000152">
+        <rdfs:subClassOf rdf:resource="http//www.pizza.owl/OnePiece/OnePiece0000087"/>
+        <rdfs:isDefinedBy xml:lang="en">He wrote only one episode for onepiece but has written many other japanese managas that are for babies.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Suminori Takegami</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000009"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000066"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000068"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000070"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000072"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000074"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000076"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000078"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000080"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000015"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000017"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000019"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000015"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000036"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000038"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000040"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000042"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000022"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000024"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000025"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000027"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000029"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000031"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000033"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000045"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000047"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000048"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000050"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000051"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000101"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000104"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000105"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000107"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000109"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000110"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000111"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000088"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000089"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000090"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000091"/>
+            <rdf:Description rdf:about="http//www.pizza.owl/OnePiece/OnePiece0000092"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
